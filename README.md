@@ -7,3 +7,7 @@ Solar and Wind Spain Power
 
 ## Using data with sowisp_lib
 ### Requirements
+
+```python
+import numpy as np
+```
