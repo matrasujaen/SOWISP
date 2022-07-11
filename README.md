@@ -9,7 +9,9 @@ Solar and Wind Spain Power
 ### Requirements
 
 ```python
-import numpy as np
+Python  3.8.10
+Numpy   1.21.2
+Pandas  1.3.3
 ```
 
 You can see some examples for the use of sowisp library in ./wxample_of_use/ folde.
