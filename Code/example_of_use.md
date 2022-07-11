@@ -45,7 +45,7 @@ plt.show()
 
 
 
-## Some NUTS-2 time serie representation 
+## NUTS-2 time serie representation 
 We have chosen several NUTS2 for the representation of the temporal evolution of the installed power. You can choose as many NUTS2 as you want.
 
 [NUTS-2 time serie representation](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_2_timeserie.py)
@@ -86,3 +86,46 @@ plt.plot_date(df_inspow_to_plot.index, df_inspow_to_plot[df_inspow_to_plot.colum
 plt.legend(loc = 'lower right')
 plt.show()
 ```
+
+## DataFrame as LateX table for a specific dates
+You can build a table in LateX format with one or several dates, for any of the spatial aggregations. In the following example a few months are shown for NUTS-2 aggregations.
+
+```python
+\begin{tabular}{lrrrrr}
+\toprule
+          NUTS\_2 &  Latitude &  Longitude &  InsPowMW\_20180131 &  InsPowMW\_20180228 &  InsPowMW\_20180331 \\
+\midrule
+       Andalucia & 37.013878 &  -4.612041 &          66.320020 &          66.320020 &          66.320020 \\
+          Aragon & 41.518475 &  -1.012712 &          31.007458 &          31.007458 &          31.007458 \\
+        Asturias & 43.370000 &  -6.670833 &          43.204167 &          43.204167 &          43.204167 \\
+     CValenciana & 39.854706 &  -0.709412 &          69.955294 &          69.955294 &          69.955294 \\
+       Cantabria & 43.260000 &  -3.897500 &           8.827000 &           8.827000 &           8.827000 \\
+CastillaLaMancha & 39.616667 &  -2.236944 &          53.035194 &          53.035194 &          53.179222 \\
+   CastillaYLeon & 41.945736 &  -4.165736 &          42.733194 &          42.733194 &          42.733194 \\
+        Cataluna & 41.283333 &   0.868889 &          48.691111 &          48.691111 &          48.691111 \\
+     Extremadura & 40.010000 &  -6.140000 &           0.000000 &           0.000000 &           0.000000 \\
+         Galicia & 42.985733 &  -8.137467 &          42.121200 &          43.027867 &          43.027867 \\
+         LaRioja & 42.177143 &  -2.130000 &          64.017143 &          64.017143 &          64.017143 \\
+          Murcia & 37.982000 &  -1.152000 &          44.872000 &          44.872000 &          44.872000 \\
+         Navarra & 42.470323 &  -1.681290 &          28.271839 &          28.271839 &          28.271839 \\
+       PaisVasco & 43.074615 &  -2.553846 &          11.798462 &          11.798462 &          11.798462 \\
+\bottomrule
+\end{tabular}
+```
+
+```python
+out_LateX_fp = '.../OUTFP/LateXTable.tex'
+
+date_beg = '20180131'
+date_end = '20180331'
+df_date_crop = sowisp_lib.select_date_range(df, date_beg, date_end)
+df_date_crop_NUTS2 = sowisp_lib.group_data(df_date_crop, aggregator='NUTS_2')
+
+# Save a LateX file
+df_date_crop_NUTS2.to_latex(out_LateX_fp, index=False)
+# Print on terminal like LateX Table format
+print(df_date_crop_NUTS2.to_latex(index=False))
+```
+
+
+
