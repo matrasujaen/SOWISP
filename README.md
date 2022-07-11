@@ -47,4 +47,4 @@ Work In Progres...
 You can see some examples for the use of SOWISP library in ./example_of_use/ folde.
 
 
-[Example of use](https://github.com/matrasujaen/SOWISP/blob/main/Examples/example_of_use.md)
+[Example of use](https://github.com/matrasujaen/SOWISP/blob/main/Code/example_of_use.md)
