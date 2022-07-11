@@ -12,5 +12,7 @@ Solar and Wind Spain Power
 import numpy as np
 ```
 
-You can see some examples for the use of sowisp library in ./xample_of_use/ folde. 
+You can see some examples for the use of sowisp library in ./wxample_of_use/ folde.
+
+
 [Example of use](https://github.com/matrasujaen/SOWISP/blob/main/Examples/example_of_use.md)
