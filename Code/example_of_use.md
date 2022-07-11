@@ -45,7 +45,7 @@ plt.show()
 
 
 ## Installed Power for NUTS-3 aggregations.
-
+In this examples we show how to select a specific date, aggregations to NUTS-3 and plot a political map with a colorbar.
 
 ```python
 import numpy as np
@@ -58,6 +58,22 @@ from datetime import datetime
 from matplotlib import pyplot as plt
 import sowisp_lib
 ```
+
+```python
+file_path = '.../Data/'
+shapefile = '.../shapefiles/recintos_provinciales_inspire_peninbal_etrs89.shp'
+dict_colors = {'PV': 'Reds', 'Wind': 'PuBu'}
+dict_replace_NUTS3 = {'Castellon': 'Castello/Castellon', 'Alicante': 'Alacant/Alicante', 'Araba': 'Araba/Alava', 'Valencia': 'València/Valencia'}
+date_map = '20201231'
+
+
+geoDf = gpd.read_file(shapefile)
+# Modify if change DataBase names.
+arrayProvIGN = np.array(
+    [nombre.replace('Á', 'A').replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ñ', 'n').replace(' ', '') for nombre in geoDf['NAMEUNIT'].values]
+)
+```
+
 
 WORK IN PROGRESS...
 
