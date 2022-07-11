@@ -44,7 +44,7 @@ plt.show()
 ```
 
 
-## Installed Power for NUTS-2 aggregations.
+## Installed Power for NUTS-3 aggregations.
 
 WORK IN PROGRESS...
 
