@@ -1,6 +1,8 @@
 # Example of use
 
 ## Installed Power (scaled sizes) Scatter Plot for Iberian Peninsula.
+The following is an example of the wind database representation of the installed power for each Town.
+
 
 ```python
 
