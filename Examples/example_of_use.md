@@ -7,10 +7,10 @@ The following is an example of the wind database representation of the installed
 ```python
 
 import pandas as pd
-import sowisp_lib
 from matplotlib import pyplot as plt
 import cartopy.crs as ccrs
 import cartopy
+import sowisp_lib
 
 file_path = .../Data/SOWISP_Wind.csv
 df = sowisp_lib.read_database(file_path)
