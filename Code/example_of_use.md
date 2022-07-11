@@ -48,6 +48,10 @@ plt.show()
 ## Some NUTS-2 time serie representation 
 We have chosen several NUTS2 for the representation of the temporal evolution of the installed power. You can choose as many NUTS2 as you want.
 
+[NUTS-2 time serie representation](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_2_timeserie.py)
+
+
+
 ![NUTS-2 time serie representation](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/NUTS2_timeserie.png)
 
 
