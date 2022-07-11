@@ -12,4 +12,4 @@ Solar and Wind Spain Power
 import numpy as np
 ```
 
-[a link](https://github.com/matrasujaen/SOWISP/blob/main/Examples/example_of_use.md)
+[Example of use](https://github.com/matrasujaen/SOWISP/blob/main/Examples/example_of_use.md)
