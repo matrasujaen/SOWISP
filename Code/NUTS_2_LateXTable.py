@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 '''
-Created on 01 07 2022
+Created on July 2022
 
 @author: MATRAS research group.
     Department of Physics of the University of Jaen.
