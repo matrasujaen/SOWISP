@@ -116,6 +116,10 @@ CastillaLaMancha & 39.616667 &  -2.236944 &          53.035194 &          53.035
 \end{tabular}
 ```
 
+You can save a LateX table file or show by terminal. 
+
+[NUTS-2 LateX Table](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_2_LateXTable.py)
+
 ```python
 import pandas as pd
 import sowisp_lib
