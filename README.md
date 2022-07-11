@@ -1,6 +1,6 @@
 # SOWISP
 
-**SO**lar and **WI**nd **S**pain **P**ower. 
+**SO**lar and **WI**nd **S**panish **P**ower. 
 
 Description ... *Work In Progres*
 
