@@ -58,6 +58,7 @@ from datetime import datetime
 from matplotlib import pyplot as plt
 import sowisp_lib
 ```
+Define the path's and dictionaries 
 
 ```python
 file_path = '.../Data/'
@@ -74,8 +75,62 @@ arrayProvIGN = np.array(
 )
 ```
 
+Iberian Peninsula Map for NUTS-3 aggregations.
+```python
+fig = plt.figure(0, (19.0 / 2.54, 7.5 / 2.54), dpi = 600, clear = True)
+ax = {}
+dx = 0.0
+for Tech in ['PV','Wind']:
+    ax[f'Map_{Tech}'] = fig.add_axes([0.02 + dx, 0.1, 0.46, 0.95], projection = ccrs.PlateCarree())
+    ax[f'Map_{Tech}'].set_extent([-11.0, 4.5, 35.0, 45.0], ccrs.PlateCarree())
+    cmap = plt.get_cmap(dict_colors[Tech])
 
-WORK IN PROGRESS...
+    dfSOWISP = sowisp_lib.read_database(file_path+'SOWISP_'+Tech+'.csv')
+    dfSOWISP = sowisp_lib.select_date_range(dfSOWISP, date_map, date_map)
+    dfSOWISP = sowisp_lib.group_data(dfSOWISP, aggregator='NUTS_3')
+
+    for idx in dfSOWISP.index.values:
+        if np.isin(np.array(dfSOWISP.loc[idx]['NUTS_3'], dtype = 'U11'), np.array(tuple(dict_replace_NUTS3.keys()), dtype = 'U11')).item() == True:
+            NUTS3IGN = dict_replace_NUTS3[dfSOWISP.loc[idx]['NUTS_3']]
+        else:
+            NUTS3IGN = dfSOWISP.loc[idx]['NUTS_3']
+        ax[f'Map_{Tech}'].add_geometries(
+            geoms = geoDf[arrayProvIGN == NUTS3IGN]['geometry'].values,
+            crs = ccrs.PlateCarree(),
+            facecolor = cmap(dfSOWISP.loc[idx]['InsPowMW_'+date_map] / dfSOWISP['InsPowMW_'+date_map].max()),
+            edgecolor = 'black',
+            linewidth = 0.5
+        )
+    # La base de datos eolica no contiene todas las NUTS3s.
+    # Para que no sean transparentes, se pintan de valor 0.0
+    #if (Tech == 'Wind'):
+    if (Tech == 'Wind')|(Tech=='PV'):
+        for NUTS3 in ('Badajoz', 'Córdoba', 'Alacant/Alicante', 'Madrid', 'Girona'):
+            ax[f'Map_{Tech}'].add_geometries(
+                geoms = geoDf[geoDf['NAMEUNIT'] == NUTS3]['geometry'].values,
+                crs = ccrs.PlateCarree(),
+                facecolor = cmap(0.0),
+                edgecolor = 'black',
+                linewidth = 0.5
+            )
+    ax[f'Map_{Tech}'].background_img(name = 'basemap', resolution = 'high')
+    ax[f'Map_{Tech}'].coastlines(resolution = '50m')
+    ax[f'Map_{Tech}'].add_feature(cf.BORDERS)
+
+    ax[f'Cbar_{Tech}'] = fig.add_axes([0.02 + dx, 0.15, 0.46, 0.02])
+    cbar = mpl.colorbar.ColorbarBase(
+        ax[f'Cbar_{Tech}'],
+        cmap = cmap,
+        norm = mpl.colors.Normalize(vmin = 0.0, vmax = dfSOWISP['InsPowMW_'+date_map].max()),
+        orientation = 'horizontal'
+    )
+    cbar.set_label(f'{Tech} Installed Capacity [MW]', fontsize = 10, family = 'Liberation Sans')
+    cbar.ax.tick_params(labelsize = 8)
+    dx = 0.5
+fig.savefig('.../OUTFP/NUTS3_map.jpg', dpi = 600)
+plt.close(0)
+```
+
 
 ## NUTS-2 time serie representation 
 We have chosen several NUTS2 for the representation of the temporal evolution of the installed power. You can choose as many NUTS2 as you want.
