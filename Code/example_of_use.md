@@ -44,6 +44,9 @@ plt.show()
 ```
 
 
+## Installed Power for NUTS-2 aggregations.
+
+WORK IN PROGRESS...
 
 ## NUTS-2 time serie representation 
 We have chosen several NUTS2 for the representation of the temporal evolution of the installed power. You can choose as many NUTS2 as you want.
