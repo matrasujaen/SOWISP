@@ -117,6 +117,10 @@ CastillaLaMancha & 39.616667 &  -2.236944 &          53.035194 &          53.035
 ```
 
 ```python
+import pandas as pd
+import sowisp_lib
+
+
 out_LateX_fp = '.../OUTFP/LateXTable.tex'
 
 date_beg = '20180131'
