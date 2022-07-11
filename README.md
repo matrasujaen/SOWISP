@@ -1,6 +1,6 @@
 # SOWISP
 
-Solar and Wind Spain Power. Description ... **Work In Progres**
+**SO**lar and **WI**nd **S**pain **P**ower. Description ... **Work In Progres**
 
 
 ## Data
