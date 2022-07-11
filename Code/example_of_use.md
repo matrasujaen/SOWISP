@@ -41,6 +41,8 @@ plt.scatter(x= df_date_crop['Longitude'].copy(),y= df_date_crop['Latitude'].copy
 plt.show()
 ```
 
+
+
 ## Some NUTS-2 time serie representation 
 We have chosen several NUTS2 for the representation of the temporal evolution of the installed power. You can choose as many NUTS2 as you want.
 
