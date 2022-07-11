@@ -46,6 +46,19 @@ plt.show()
 
 ## Installed Power for NUTS-3 aggregations.
 
+
+```python
+import numpy as np
+import pandas as pd
+import geopandas as gpd
+import cartopy.crs as ccrs
+import cartopy.feature as cf
+import matplotlib as mpl
+from datetime import datetime
+from matplotlib import pyplot as plt
+import sowisp_lib
+```
+
 WORK IN PROGRESS...
 
 ## NUTS-2 time serie representation 
