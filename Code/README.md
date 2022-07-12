@@ -97,6 +97,8 @@ Initialize Iberian Peninsula Map.
 fig = plt.figure(0, (19.0 / 2.54, 7.5 / 2.54), dpi = 600, clear = True)
 ax = {}
 dx = 0.0 #Change to dx = 0.5 when change technology
+```
+```python
 ax[f'Map_{Tech}'] = fig.add_axes([0.02 + dx, 0.1, 0.46, 0.95], projection = ccrs.PlateCarree())
 ax[f'Map_{Tech}'].set_extent([-11.0, 4.5, 35.0, 45.0], ccrs.PlateCarree())
 cmap = plt.get_cmap(dict_colors[Tech])
