@@ -49,4 +49,4 @@ Work In Progres...
 You can see some examples for the use of SOWISP library in ./example_of_use/ folder. The examples show how to draw a map of installed power by towns and by NUTS_3 for the Iberian Peninsula. Also how to draw a time series of the data for NUTS_2 and how to obtain a table in LateX format of the installed power for each NUTS_2, both in .tex file and by terminal.
 
 
-[Example of use](https://github.com/matrasujaen/SOWISP/blob/main/Code/example_of_use.md)
+[Example of use](https://github.com/matrasujaen/SOWISP/blob/main/Code/README.md)
