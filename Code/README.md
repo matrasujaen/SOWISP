@@ -71,8 +71,9 @@ shapefile = '.../shapefiles/recintos_provinciales_inspire_peninbal_etrs89.shp'
 dict_colors = {'PV': 'Reds', 'Wind': 'PuBu'}
 dict_replace_NUTS3 = {'Castellon': 'Castello/Castellon', 'Alicante': 'Alacant/Alicante', 'Araba': 'Araba/Alava', 'Valencia': 'València/Valencia'}
 date_map = '20201231'
+```
 
-
+```python
 geoDf = gpd.read_file(shapefile)
 # Modify if change DataBase names.
 arrayProvIGN = np.array(
@@ -82,7 +83,7 @@ arrayProvIGN = np.array(
 Tech = 'Wind'  #Select 'PV' or 'Wind'
 ```
 
-Read the corresponding database, select a date for plot a map and group by NUTS-3.
+Read the corresponding SOWISP database, select a date for plot a map and group by NUTS-3.
 ```python
 dfSOWISP = sowisp_lib.read_database(file_path+'SOWISP_'+Tech+'.csv')
 dfSOWISP = sowisp_lib.select_date_range(dfSOWISP, date_map, date_map)
