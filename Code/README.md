@@ -52,6 +52,7 @@ In this examples we show how to select a specific date, aggregations to NUTS-3 a
 ![Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/NUTS3_map.jpg)
 
 
+Import the required python libraries.
 
 ```python
 import numpy as np
