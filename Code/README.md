@@ -1,5 +1,7 @@
 # Example of use
-NOTE: Additional Python libraries are required.
+NOTE: 
+- Additional Python libraries are required.
+- Be careful with absolutes or relatives path's, we recommend use absolute path's for not future errors.
 
 ## Installed Power (scaled sizes) Scatter Plot for Iberian Peninsula.
 The following is an example of the wind database representation of the installed power for each Town.
