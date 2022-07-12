@@ -47,6 +47,12 @@ plt.show()
 ## Installed Power for NUTS-3 aggregations.
 In this examples we show how to select a specific date, aggregations to NUTS-3 and plot a political map with a colorbar.
 
+[Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_3_aggregations_map.py)
+
+![Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/NUTS3_map.jpg)
+
+
+
 ```python
 import numpy as np
 import pandas as pd
