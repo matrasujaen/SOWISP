@@ -136,7 +136,7 @@ for idx in dfSOWISP.index.values:
         )
 ```
 
-Repeat the above for both technologies (PV and Wind) and save the figure. 
+Save the figure. 
 ```python
 
 fig.savefig('.../OUTFP/NUTS3_map.jpg', dpi = 600)
