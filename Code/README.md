@@ -113,7 +113,7 @@ for Tech in ['PV','Wind']:
                 edgecolor = 'black',
                 linewidth = 0.5
             )
-    ax[f'Map_{Tech}'].background_img(name = 'basemap', resolution = 'high')
+    ax[f'Map_{Tech}'].stock_img()
     ax[f'Map_{Tech}'].coastlines(resolution = '50m')
     ax[f'Map_{Tech}'].add_feature(cf.BORDERS)
 
