@@ -1,5 +1,5 @@
 # Example of use
-NOTE: 
+NOTES: 
 - Additional Python libraries are required.
 - Be careful with absolutes or relatives path's, we recommend use absolute path's for not future errors.
 
