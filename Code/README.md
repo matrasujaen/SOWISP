@@ -3,10 +3,6 @@
 ## Installed Power (scaled sizes) Scatter Plot for Iberian Peninsula.
 The following is an example of the wind database representation of the installed power for each Town.
 
-[Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/town_scatterplot_iberianpeninsula.py)
-
-![Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/town_scatterplot_ip.png)
-
 
 ```python
 
@@ -139,6 +135,11 @@ Repeat the above for both technologies (PV and Wind) and save the figure.
 fig.savefig('.../OUTFP/NUTS3_map.jpg', dpi = 600)
 plt.close(0)
 ```
+
+
+[Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/town_scatterplot_iberianpeninsula.py)
+
+![Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/town_scatterplot_ip.png)
 
 
 ## NUTS-2 time serie representation 
