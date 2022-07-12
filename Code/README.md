@@ -3,6 +3,10 @@
 ## Installed Power (scaled sizes) Scatter Plot for Iberian Peninsula.
 The following is an example of the wind database representation of the installed power for each Town.
 
+[Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/town_scatterplot_iberianpeninsula.py)
+
+![Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/town_scatterplot_ip.png)
+
 
 ```python
 
@@ -42,11 +46,6 @@ plt.show()
 
 ## Installed Power for NUTS-3 aggregations.
 In this examples we show how to select a specific date, aggregations to NUTS-3 and plot a political map with a colorbar.
-
-[Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_3_aggregations_map.py)
-
-![Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/NUTS3_map.jpg)
-
 
 Import the required python libraries.
 
@@ -136,10 +135,9 @@ fig.savefig('.../OUTFP/NUTS3_map.jpg', dpi = 600)
 plt.close(0)
 ```
 
+[Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_3_aggregations_map.py)
 
-[Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/town_scatterplot_iberianpeninsula.py)
-
-![Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/town_scatterplot_ip.png)
+![Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/NUTS3_map.jpg)
 
 
 ## NUTS-2 time serie representation 
