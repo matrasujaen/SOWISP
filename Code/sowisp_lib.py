@@ -96,7 +96,7 @@ def group_data(df, aggregator = None):
 
     if aggregator is not None:
         df_latlon = df.groupby(aggregator).agg(aggregations)
-        df_pot   = df.drop(['Latitude', 'Longitude'], axis=1).groupby(aggregator).mean()
+        df_pot   = df.drop(['Latitude', 'Longitude'], axis=1).groupby(aggregator).sum()
         df_groupby =  _pd.concat([df_latlon, df_pot], axis=1)
         df_groupby.reset_index(inplace=True)
     else:
