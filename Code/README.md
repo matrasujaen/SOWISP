@@ -7,7 +7,7 @@ The following is an example of the wind database representation of the installed
 
 ![Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/town_scatterplot.png)
 
-l
+
 ```python
 
 import pandas as pd
