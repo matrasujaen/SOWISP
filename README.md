@@ -2,11 +2,11 @@
 
 **SO**lar and **WI**nd **S**panish **P**ower.
 
-SOWISP is a database containing information associated with PV and Wind installed power. 
+SOWISP is a database containing information associated with PV and Wind installed power. In this database, the geographic information and the installed power in that location appears on a monthly basis.
 
 
 ## Data
-In Data folder we can find the SOWISP database. The SOWISP database consists of two CSV files, one for the installed capacity corresponding to wind and the other for PV.  In this database, the geographic information and the installed power in that location appears on a monthly basis.
+In Data folder we can find the SOWISP database. The SOWISP database consists of two CSV files, one for the installed capacity corresponding to wind and the other for PV. 
 
 Wind CSV:
 
