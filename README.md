@@ -6,7 +6,7 @@ SOWISP is a database containing information associated with PV and Wind installe
 
 
 ## Data
-In "*Data*" folder we can find the SOWISP database. The SOWISP database consists of two CSV files, one for the installed capacity corresponding to wind and the other for PV. 
+In "*Data*" folder we can find the SOWISP database. The SOWISP database consists of two CSV files, one for the installed capacity corresponding to PV and the other for Wind. 
 
 Wind CSV:
 
