@@ -96,7 +96,7 @@ Initialize Iberian Peninsula Map.
 ```python
 fig = plt.figure(0, (19.0 / 2.54, 7.5 / 2.54), dpi = 600, clear = True)
 ax = {}
-dx = 0.0 #Change to dx = 0.5 when change technology
+dx = 0.0 # For PV, we define dx=0.5, and for Wind we define dx=0.0
 ```
 
 The code below should be repeat for each technology (PV and Wind), in order to recreate the entire figure.
