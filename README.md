@@ -32,7 +32,7 @@ PV CSV:
 Wind CSV:
 
 ```python
-              Town   Area  Latitude  Longitude NUTS2  NUTS3   InsPowMW_20150131   ...     InsPowMW_20201231
+              Town   Area  Latitude  Longitude NUTS2  NUTS3   InsPowMW_20150131   ...     InsPowMW_20201231 
 0           Abadín  196.0     43.37      -7.49  ES11  ES112             208.860   ...               243.510
 1             Abla   45.2     37.16      -2.77  ES61  ES611              38.000   ...                38.000
 2          Ablitas   77.5     41.96      -1.59  ES22  ES220               0.000   ...                41.580
