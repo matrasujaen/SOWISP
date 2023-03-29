@@ -6,9 +6,9 @@ NOTES:
 ## Installed Power (scaled sizes) Scatter Plot for Iberian Peninsula.
 The following is an example of the wind database representation of the installed power for each Town.
 
-[Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/town_scatterplot_iberianpeninsula.py)
+[Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/tree/main/example_usages/town_scatterplot_iberianpeninsula.py)
 
-![Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/town_scatterplot_ip.png)
+![Town Scatter Plot Iberian Peninsula](https://github.com/matrasujaen/SOWISP/tree/main/example_usages/imgs/town_scatterplot_ip.png)
 
 
 ```python
@@ -143,19 +143,19 @@ fig.savefig('.../OUTFP/NUTS3_map.jpg', dpi = 600)
 plt.close(0)
 ```
 
-[Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_3_aggregations_map.py)
+[Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/tree/main/example_usages/NUTS_3_aggregations_map.py)
 
-![Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/NUTS3_map.jpg)
+![Installed power for Iberian Peninsula, NUTS-3 aggregations](https://github.com/matrasujaen/SOWISP/tree/main/example_usages/imgs/NUTS3_map.jpg)
 
 
 ## NUTS-2 time serie representation 
 We have chosen several NUTS2 for the representation of the temporal evolution of the installed power. You can choose as many NUTS2 as you want.
 
-[NUTS-2 time serie representation](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_2_timeserie.py)
+[NUTS-2 time serie representation](https://github.com/matrasujaen/SOWISP/tree/main/example_usages/NUTS_2_timeserie.py)
 
 
 
-![NUTS-2 time serie representation](https://github.com/matrasujaen/SOWISP/blob/main/Code/imgs/NUTS2_timeserie.png)
+![NUTS-2 time serie representation](https://github.com/matrasujaen/SOWISP/tree/main/example_usages/imgs/NUTS2_timeserie.png)
 
 
 
@@ -218,7 +218,7 @@ CastillaLaMancha & 39.616667 &  -2.236944 &          53.035194 &          53.035
 
 You can save a LateX table file or show by terminal. 
 
-[NUTS-2 LateX Table](https://github.com/matrasujaen/SOWISP/blob/main/Code/NUTS_2_LateXTable.py)
+[NUTS-2 LateX Table](https://github.com/matrasujaen/SOWISP/tree/main/example_usages/NUTS_2_LateXTable.py)
 
 ```python
 import pandas as pd
