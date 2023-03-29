@@ -117,8 +117,6 @@ def _idx_from_date(df, date_stop, mask_columns_pot):
 
 def select_date_range(df, date_beg, date_end):
     '''
-    Work In Progress ...
-
     Parameters
     ----------
     df          : pandas.DataFrame,
